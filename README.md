@@ -15,7 +15,7 @@ WPF does not provide true Matrix interpolation so this library includes one.
             // library uses WPF easing functions
             var easing = new ElasticEase();
             // add animations to animator
-            // labbda will be called with interpolated value each frame
+            // lambda will be called with interpolated value each frame
             animator.Add(new DLMatrixAnimation(fromMatrix, toMatrix, TimeSpan.FromSeconds(4), o =>
                 {
                     var current = (Matrix) o;

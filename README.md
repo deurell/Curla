@@ -1,9 +1,10 @@
 DLAnimatorLib
 =============
 WPF has an excellent animation library. It has a shortcoming in the fact that it only animates dependency properties.
-This library makes it possible to animate any Matrix, Point or Rectangle you chose.
+This library makes it possible to animate any Matrix, Point or Rectangle of your choice. Instead of directly
+interpolating the property the library makes a callback using a specified lambda each frame.
 
-WPF does not provide a Matrix interpolation animation so this library includes one.
+WPF does not provide true Matrix interpolation so this library includes one.
 
             // create animator
             var animator = new DLAnimator();
